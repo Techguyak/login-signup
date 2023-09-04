@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fec16fb343.js" crossorigin="anonymous"></script>
+
+       
+</head>
+<body>
+    <div class="box" id="box">
+
+        <form action="">
+            <h1>ShowCase</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required><i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required><i class="fa-solid fa-lock"></i>
+            </div>
+              <div class="rem-fogt">
+                <label> <input type="checkbox" id="check">Remember Me</label>
+                <a href="#">Forgot Password?</a>
+              </div>
+              <button type="submit" class="btn">Login</button>
+              <div class="register-link">
+                <p>Don't have an account?
+                    <a href="#" class="sign-up" onclick="myfunc1()">Register</a> 
+                </p>
+              </div>
+        </form>
+    </div>
+    <div class="box1" id="box1">
+
+        <form action="">
+            <h1>ShowCase</h1>
+            <div class="input-box">
+                <input type="email" placeholder="Email" required><i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required><i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required><i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Confirm Password" required><i class="fa-solid fa-lock"></i>
+            </div>
+              <div class="rem-fogt">
+                <label> <input type="checkbox" id="check" required>I agree to Terms & Condition</label>
+                <a href="#"></a>
+              </div>
+              <button type="submit" class="btn">Register</button>
+              <div class="register-link">
+                <p>Already have an account?
+                    <a href="#" class="log-in" onclick="myfunc2()">Log in</a> 
+                </p>
+              </div>
+        </form>
+    </div>
+    <script>
+        function myfunc1(){
+            document.getElementById("box1").style.display ="block";
+            document.getElementById("box").style.display="none";
+        }
+        function myfunc2(){
+            document.getElementById("box").style.display ="block";
+            document.getElementById("box1").style.display="none";
+        }
+    </script>
+</body>
+</html>
