@@ -1,2 +1,2 @@
 # login-signup
-+ DB will be connecting soon
++ DB will be connected soon
