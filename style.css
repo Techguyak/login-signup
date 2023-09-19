@@ -101,9 +101,10 @@ body{
 .box .register-link a:hover, .rem-fogt a:hover{
     text-decoration: underline;
 }
-@media (max-width:402px) {
+@media (max-width:400px) {
     .rem-fogt{
         margin: -15px 0px 15px;
+        font-size: 14px;
     }
 }
 .box1{
@@ -189,9 +190,10 @@ body{
 .box1 .register-link a:hover, .rem-fogt a:hover{
     text-decoration: underline;
 }
-@media (max-width:402px) {
+@media (max-width:400px) {
     .rem-fogt{
         margin: -15px 0px 15px;
+        
     }
 }#box1{
    display: none;
