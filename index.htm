@@ -18,7 +18,7 @@
                 <input type="text" placeholder="Username" required><i class="fa-solid fa-user"></i>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Password" required><i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password" id="lock-show" required><i class="fa-solid fa-lock lock-btn"></i>
             </div>
               <div class="rem-fogt">
                 <label> <input type="checkbox" id="check">Remember Me</label>
@@ -43,10 +43,10 @@
                 <input type="text" placeholder="Username" required><i class="fa-solid fa-user"></i>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Password" required><i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password" id="lock1-show" required><i class="fa-solid fa-lock lock1-btn"></i>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Confirm Password" required><i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Confirm Password" required id="lock2-show"><i class="fa-solid fa-lock lock2-btn" ></i>
             </div>
               <div class="rem-fogt">
                 <label> <input type="checkbox" id="check" required>I agree to Terms & Condition</label>
@@ -69,6 +69,66 @@
             document.getElementById("box").style.display ="block";
             document.getElementById("box1").style.display="none";
         }
+
+        let choice = false;
+        document.querySelector('.lock-btn').addEventListener('click',()=>{
+            toshow();
+        });
+        function toshow(){
+            if(!choice){
+            document.getElementById("lock-show").setAttribute('type','text');
+            choice = true;
+            
+        }
+            else{
+                document.getElementById("lock-show").setAttribute('type','password')
+               choice = false; 
+            }
+        }
+        document.querySelector('.lock1-btn').addEventListener('click',()=>{
+            toshow1();
+        });
+        function toshow1(){
+            if(!choice){
+            document.getElementById("lock1-show").setAttribute('type','text');
+            choice = true;
+            
+        }
+            else{
+                document.getElementById("lock1-show").setAttribute('type','password')
+               choice = false; 
+            }
+        }
+        document.querySelector('.lock2-btn').addEventListener('click',()=>{
+            toshow2();
+        });
+        function toshow2(){
+            if(!choice){
+            document.getElementById("lock2-show").setAttribute('type','text');
+            choice = true;
+            
+        }
+            else{
+                document.getElementById("lock2-show").setAttribute('type','password')
+               choice = false; 
+            }
+        }
+
+        // })
+        
+
+        // document.querySelector('.lock-btn').addEventListener('click',() =>{
+        //     let choice= false;
+        //     let lock
+        //     if(!choice){
+        //         lock = document.getElementById('lockshow').setAttribute('type','Text');
+        //         choice = true;
+        //     } 
+        //     else{
+        //         lock = document.getElementById('lockshow').setAttribute('type','password')
+        //         choice = false;
+        //     }
+        // })
     </script>
 </body>
 </html>
